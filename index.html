@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="material-kit-pro.min.css" />
+  <title>API-FRONT</title>
+</head>
+
+<body >
+
+    <main>   
+        <nav class="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0">
+            <div class="container px-1"><a class="navbar-brand font-weight-bolder ms-lg-0 " href="index.html">GAFAS
+                WALKERS</a><button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
+                  class="navbar-toggler-icon mt-2"><span class="navbar-toggler-bar bar1"></span><span
+                    class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></span></button>
+            
+                <div class="collapse navbar-collapse" id="navigation">
+                  
+                      <ul class="navbar-nav ms-auto">
+                          <li class="nav-item"><a class="nav-link text-dark font-weight-bold d-flex align-items-center me-2 "
+                              aria-current="page" href="./producto.html">Productos</a></li>
+                          <li class="nav-item"><a class="nav-link text-dark font-weight-bold d-flex align-items-center me-2 "
+                              aria-current="page" href="producto.html">Tienda</a></li>
+                          <li class="nav-item"><a class="nav-link text-dark font-weight-bold d-flex align-items-center me-2 "
+                              aria-current="page" href="carrito.html" rel="nofollow"><i class="fa fa-shopping-cart"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+          </nav>
+         
+
+
+  <div class="container my-5">
+      <!-- BANNER -->
+      <section>
+          <div class="page-header py-10 py-md-0"
+            style="background-image:url(https://blog.congafasdesol.com/wp-content/uploads/2017/05/gafas-running-1.jpg);  background-position: 0% 0%;;min-height:60vh;">
+            <span class="mask bg-gradient-dark opacity-7"></span>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-sm-9 text-center mx-auto">
+                  <h1 class="text-white mb-4">Gafas de Montaña</h1>
+                  <p class="lead text-white mb-sm-6 mb-4">Consigue tus gafas de running al mejor precio, siempre con los
+                    mejores descuentos en nuestra tienda online. Entra en nuestro catálogo y elige tus gafas de running
+                    favoritas. Disponemos de las mejores marcas y tenemos una amplia variedad de modelos en todos los
+                    colores.</p>
+                  <a href="producto.html"> <button class="btn btn-white btn-lg">Nueva Colección</button></a>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="p-4">Productos</h4>
+      </div>
+
+      <div id="product-list" class="row mt-4">
+        <!-- Los productos de la api se mostrarán aquí -->
+      </div>
+
+
+      <!-- CATEGORIAS -->
+      <div class="row mb-5  " id="categoria-list">   
+      <!-- Las categorias de la api se mostrarán aquí -->
+      </div>
+
+      <!-- TESTIMONIOS -->
+      <section class="py-3 mt-5 bg-gradient-dark position-relative overflow-hidden ">
+        <img src="https://demos.creative-tim.com/material-kit-pro/assets/img/shapes/pattern-lines.svg"
+          class="position-absolute opacity-2 w-100 top-0 d-md-block d-none" alt="avatar">
+        <div class="container pt-6 pb-5 position-relative z-index-3">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+              <span class="badge badge-white text-dark mb-2">Clientes</span>
+              <h2 class="text-white mb-3">Testimonios </h2>
+              <h5 class="text-white font-weight-light">
+                La satisfacción de nuestros clientes es lo más importante para nosotros y la razón de ser de Gafas Sun.
+              </h5>
+            </div>
+          </div>
+          <div class="row mt-8">
+            <div class="col-md-4 mb-md-0 mb-7">
+              <div class="card">
+                <div class="text-center mt-n5 z-index-1">
+                  <div class="position-relative">
+                    <div class="blur-shadow-avatar rounded-circle">
+                      <img class="avatar avatar-xxl shadow-lg"
+                        src="https://mui.today/__export/1595697578261/sites/mui/img/2020/07/25/camila-cabello.jpg_1308525063.jpg"
+                        alt="avatar">
+                    </div>
+                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                      style="background-image: url(&quot;&quot;);"></div>
+                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                  </div>
+                </div>
+                <div class="card-body text-center pb-0">
+                  <h4 class="mb-0">Camila Torres</h4>
+                  <p>@camilatorres</p>
+                  <p class="mt-2">
+                    Compré un par en tu tienda y desde entonces las he usado todos los días. Son súper cómodas y me
+                    encanta cómo se ven en mí.
+                  </p>
+                </div>
+                <div class="card-footer text-center pt-2">
+                  <div class="mx-auto">
+                    <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>quote-down</title>
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path
+                          d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
+                          fill="#48484A" fill-rule="nonzero"
+                          transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-7">
+              <div class="card">
+                <div class="text-center mt-n5 z-index-1">
+                  <div class="position-relative">
+                    <div class="blur-shadow-avatar rounded-circle">
+                      <img class="avatar avatar-xxl shadow-lg"
+                        src="https://yt3.googleusercontent.com/_ltO8lcxpUtygwMlL7mTxuKBDqaZ1JHYV3M_RuDeBcNFQ7eAKOp3mCNkP3S55HCzv8twQai-LPA=s900-c-k-c0x00ffffff-no-rj"
+                        alt="avatar">
+                    </div>
+                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                      style="background-image: url(&quot;&quot;);"></div>
+                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                  </div>
+                </div>
+                <div class="card-body text-center pb-0">
+                  <h4 class="mb-0">Daniel Jaimes</h4>
+                  <p>@Daniel Jaimes</p>
+                  <p class="mt-2">
+                    Definitivamente les recomendaría estas gafas de sol a cualquiera que esté buscando algo que sea
+                    cómodo, elegante y duradero. <br>
+  
+                  </p>
+                </div>
+                <div class="card-footer text-center pt-2">
+                  <div class="mx-auto">
+                    <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>quote-down</title>
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path
+                          d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
+                          fill="#48484A" fill-rule="nonzero"
+                          transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-7">
+              <div class="card">
+                <div class="text-center mt-n5 z-index-1">
+                  <div class="position-relative">
+                    <div class="blur-shadow-avatar rounded-circle">
+                      <img class="avatar avatar-xxl shadow-lg"
+                        src="data:image/jpeg;base64,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"
+                        alt="avatar">
+                    </div>
+                    <div class="colored-shadow rounded start-0 end-0 mx-auto avatar-xxl"
+                      style="background-image: url(&quot;&quot;);"></div>
+                    <div class="colored-shadow start-0 end-0 mx-auto avatar-xxl"></div>
+                  </div>
+                </div>
+                <div class="card-body text-center pb-0">
+                  <h4 class="mb-0">Leonardo Rodriguez</h4>
+                  <p>@leonardor</p>
+                  <p class="mt-2">
+                    Las gafas de sol que compré en tu tienda han sido una de las mejores compras que he hecho en mucho
+                    tiempo.
+                  </p>
+                </div>
+                <div class="card-footer text-center pt-2">
+                  <div class="mx-auto">
+                    <svg class="opacity-2" width="60px" height="60px" viewBox="0 0 270 270" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>quote-down</title>
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path
+                          d="M107.000381,49.033238 C111.792099,48.01429 115.761022,48.6892564 116.625294,50.9407629 C117.72393,53.8028077 113.174473,58.3219079 107.017635,60.982801 C107.011653,60.9853863 107.00567,60.9879683 106.999688,60.990547 C106.939902,61.0219589 106.879913,61.0439426 106.820031,61.0659514 C106.355389,61.2618887 105.888177,61.4371549 105.421944,61.5929594 C88.3985192,68.1467602 80.3242628,76.9161885 70.3525495,90.6906738 C60.0774843,104.884196 54.9399518,119.643717 54.9399518,134.969238 C54.9399518,138.278158 55.4624127,140.716309 56.5073346,142.283691 C57.2039492,143.328613 57.9876406,143.851074 58.8584088,143.851074 C59.7291771,143.851074 61.0353294,143.241536 62.7768659,142.022461 C68.3497825,138.016927 75.4030052,136.01416 83.9365338,136.01416 C93.8632916,136.01416 102.658051,140.063232 110.320811,148.161377 C117.983572,156.259521 121.814952,165.88151 121.814952,177.027344 C121.814952,188.695638 117.417572,198.970703 108.622813,207.852539 C99.828054,216.734375 89.1611432,221.175293 76.6220807,221.175293 C61.9931745,221.175293 49.3670351,215.166992 38.7436627,203.150391 C28.1202903,191.133789 22.8086041,175.024577 22.8086041,154.822754 C22.8086041,131.312012 30.0359804,110.239421 44.490733,91.6049805 C58.2196377,73.906272 74.3541002,59.8074126 102.443135,50.4450748 C102.615406,50.3748509 102.790055,50.3058192 102.966282,50.2381719 C104.199241,49.7648833 105.420135,49.3936487 106.596148,49.1227802 L107,49 Z M233.000381,49.033238 C237.792099,48.01429 241.761022,48.6892564 242.625294,50.9407629 C243.72393,53.8028077 239.174473,58.3219079 233.017635,60.982801 C233.011653,60.9853863 233.00567,60.9879683 232.999688,60.990547 C232.939902,61.0219589 232.879913,61.0439426 232.820031,61.0659514 C232.355389,61.2618887 231.888177,61.4371549 231.421944,61.5929594 C214.398519,68.1467602 206.324263,76.9161885 196.352549,90.6906738 C186.077484,104.884196 180.939952,119.643717 180.939952,134.969238 C180.939952,138.278158 181.462413,140.716309 182.507335,142.283691 C183.203949,143.328613 183.987641,143.851074 184.858409,143.851074 C185.729177,143.851074 187.035329,143.241536 188.776866,142.022461 C194.349783,138.016927 201.403005,136.01416 209.936534,136.01416 C219.863292,136.01416 228.658051,140.063232 236.320811,148.161377 C243.983572,156.259521 247.814952,165.88151 247.814952,177.027344 C247.814952,188.695638 243.417572,198.970703 234.622813,207.852539 C225.828054,216.734375 215.161143,221.175293 202.622081,221.175293 C187.993174,221.175293 175.367035,215.166992 164.743663,203.150391 C154.12029,191.133789 148.808604,175.024577 148.808604,154.822754 C148.808604,131.312012 156.03598,110.239421 170.490733,91.6049805 C184.219638,73.906272 200.3541,59.8074126 228.443135,50.4450748 C228.615406,50.3748509 228.790055,50.3058192 228.966282,50.2381719 C230.199241,49.7648833 231.420135,49.3936487 232.596148,49.1227802 L233,49 Z"
+                          fill="#48484A" fill-rule="nonzero"
+                          transform="translate(135.311778, 134.872794) scale(-1, -1) translate(-135.311778, -134.872794) ">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer py-9">
+          <div class="container"> 
+              <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                  <h6 class="text-uppercase mb-2">Gafas Sun</h6>
+                  <p class="mb-4 pb-2">
+                    Ve el mundo con estilo, encuentra tus gafas perfectass.
+                  </p>
+                  <a href="https://www.facebook.com/" target="_blank" class="text-secondary me-xl-4 me-3">
+                    <span class="text-lg fab fa-facebook"></span>
+                  </a>
+                  <a href="https://twitter.com/DaveDicelis" target="_blank" class="text-secondary me-xl-4 me-3">
+                    <span class="text-lg fab fa-twitter"></span>
+                  </a>
+                  <a href="https://www.instagram.com/davedicelis/" target="_blank" class="text-secondary me-xl-4 me-3">
+                    <span class="text-lg fab fa-instagram"></span>
+                  </a>
+      
+                  <a href="https://github.com/davedicelis" target="_blank" class="text-secondary me-xl-4 me-3">
+                    <span class="text-lg fab fa-github"></span>
+                  </a>
+                </div>
+                <div class="col-md-2 col-6 ms-lg-auto mb-md-0 mb-4">
+                  <h6 class="text-sm">Empresa</h6>
+                  <ul class="flex-column ms-n3 nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Nosotros
+                      </a>
+                    </li>
+      
+      
+      
+      
+      
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-md-2 col-6 mb-md-0 mb-4">
+                  <h6 class="text-sm">Paginas</h6>
+                  <ul class="flex-column ms-n3 nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Login
+                      </a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Registrase
+                      </a>
+                    </li>
+      
+                  </ul>
+                </div>
+      
+                <div class="col-md-2 col-6 mb-md-0 mb-4">
+                  <h6 class="text-sm">Legal</h6>
+                  <ul class="flex-column ms-n3 nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Políticas
+                      </a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Equipo
+                      </a>
+                    </li>
+      
+      
+                  </ul>
+                </div>
+      
+                <div class="col-md-2 col-6 mb-md-0 mb-4">
+                  <h6 class="text-sm">Recursos</h6>
+                  <ul class="flex-column ms-n3 nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="#" target="_blank">
+                        Blog
+                      </a>
+                    </li>
+      
+      
+      
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" href="producto.html" target="_blank">
+                        Productos
+                      </a>
+                    </li>
+      
+      
+                  </ul>
+                </div>
+              </div>
+              <hr class="horizontal dark mt-lg-5 mt-4 mb-sm-4 mb-1">
+              <div class="row">
+                <div class="col-8 mx-lg-auto text-lg-center">
+                  <p class="text-sm text-secondary">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear())</script> Dave Dicelis.
+                  </p>
+                </div>
+              </div>
+          </div>
+      </footer>
+
+  </div>
+
+
+</main>
+  <!-- Función para consumir la API de productos y mostrar los datos -->
+  <script>
+    // Función para consumir la API de productos y mostrar los datos
+    async function getProductData() {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/tienda/productos');
+        const data = await response.json();
+        const productListElement = document.getElementById('product-list');
+
+        data.forEach(product => {
+          const cardElement = document.createElement('div');
+          cardElement.classList.add('col-lg-4', 'col-md-6');
+         
+          const cardHtml = `
+        
+          <div class="card mt-5 mt-md-5 mt-lg-0 ">
+                      <div class="card-header p-0 mx-3 mt-n4 position-relative ">
+                        <a class="d-block blur-shadow-image  ">
+            
+            
+                          <img
+                            src="${product.imagen}"
+                            alt="img-blur-shadow" class=" img-fluid border-radius-lg  top-0 start-0" loading="lazy">
+            
+                          <img
+                            src="${product.imagen2}"
+                            alt="img-blur-shadow" class="image-secondary img-fluid border-radius-lg position-absolute top-0 start-0"
+                            loading="lazy">
+                        </a>
+                        <div class="colored-shadow"
+                          style="background-image: url(&quot;&quot;);"></div>
+                      </div>
+                      <div class="card-body pt-3">
+                        <p class="text-dark mb-2 text-sm">Entire Apartment • 3 Guests • 2 Beds</p>
+                        <a href="javascript:;">
+                          <h5>
+                            ${product.nombre}
+                          </h5>
+                        </a>
+                      
+                        <p class="card-text">${product.descripcion}</p>
+                        <p class="card-text">$${product.precio}</p>
+                        <a href="producto.html"> <button type="button" class="btn btn-outline-dark btn-sm mb-0">VER
+                            MÁS</button></a>
+                      </div>
+                     
+                    </div><br><br>          
+          `;
+
+          cardElement.innerHTML = cardHtml;
+          productListElement.appendChild(cardElement);
+        });
+      } catch (error) {
+        console.log('Error al obtener los datos de la API:', error);
+      }
+    }
+
+    // Llama a la función para obtener los datos de la API y mostrarlos
+    getProductData();
+  </script>
+
+  <!-- Función para consumir la API de categorias y mostrar los datos -->
+   <script>
+    // Función para consumir la API de categorias y mostrar los datos
+    async function getCategoryData() {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/tienda/categoria');
+        const data = await response.json();
+        const categoryListElement = document.getElementById('categoria-list');
+
+        data.forEach(category => {
+          const cardElement = document.createElement('div');
+          cardElement.classList.add('col-lg-3', 'col-md-6');
+         
+          const cardHtml = `
+          
+        
+          <div class="rotating-card-container mt-5 "  >
+          <div class="card card-rotate  mt-md-0 mt-5"  > 
+    
+              <div class="front front-background min-height-200"
+                style="background-image: url(${category.imagen}); background-size: cover;">
+                <div class="card-body pt-7 text-center">
+    
+    
+                  <p class="text-dark opacity-8 pt-9"></p>
+    
+                  <h3 class="text-dark mb-0 ">${category.nombre}</h3>
+                </div>
+              </div>
+              <div class="back back-background min-height-200"
+                style="background-image: url(${category.imagen2});background-size:cover">
+                <div class="card-body  text-center">
+                  <h3 class="text-dark mb-0">${category.nombre}</h3>
+                  <p class="text-dark opacity-8 pt-7"></p>
+                  <div class="buttons-group">
+                    <br>
+                    <a href="producto.html"> <button type="button" class="btn btn-dark btn-sm mt-7">Ver
+                        más</button></a>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>  
+       
+    
+          `;
+
+          cardElement.innerHTML = cardHtml;
+          categoryListElement.appendChild(cardElement);
+        });
+      } catch (error) {
+        console.log('Error al obtener los datos de la API:', error);
+      }
+    }
+
+    // Llama a la función para obtener los datos de la API y mostrarlos
+    getCategoryData();
+  </script>
+  
+  <script src="https://kit.fontawesome.com/349ee9c857.js" crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+  <script
+  src="https://raw.githubusercontent.com/creativetimofficial/astro-ecommerce/main/assets/js/astro-ecommerce.min.js"
+  type="text/javascript"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+  integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+  data-cf-beacon='{"rayId":"7bd6e1b40dff3eeb","version":"2023.3.0","r":1,"token":"1b7cbb72744b40c580f8633c6b62637e","si":100}'
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
